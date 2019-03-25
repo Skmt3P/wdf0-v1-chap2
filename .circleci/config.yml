@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - npm-cache-{{ checksum "./package-lock.json" }}
+      - run:
+          name: Setup
+          command: npm install
+      - save_cache:
+          key: npm-cache-{{ checksum "./package-lock.json" }}
+          paths:
+      - run:
+          name: Test
+          command: npm test
+      - run:
+          name: Build PDF
+          command: npm run pdf
+      - run:
+          name: Upload PDF
+          command: bash ./.upload_dropbox_pdf.sh SAMPLE-BOOK.pdf ${DROPBOX_TOKEN}
+      - store_artifacts:
+          path: ./articles/SAMPLE-BOOK.pdf
+          destination: SAMPLE-BOOK.pdf
+      - run:
+          name: Build EPUB
+          command: npm run epub
+      - run:
+          name: Upload EPUB
+          command: bash ./.upload_dropbox_epub.sh SAMPLE-BOOK.epub ${DROPBOX_TOKEN}
+      - store_artifacts:
+          path: ./articles/SAMPLE-BOOK.epub
+          destination: SAMPLE-BOOK.epub

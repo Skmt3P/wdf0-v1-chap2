@@ -1,0 +1,15 @@
+PREDEF:
+  - chap_preface.re
+
+CHAPS:
+  - chap_1.re
+  - chap_2.re
+  - chap_3.re
+
+APPENDIX:
+  - chap_append_1.re
+  - chap_append_2.re
+  - chap_append_3.re
+
+POSTDEF:
+  - chap_contributors.re
