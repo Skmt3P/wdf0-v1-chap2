@@ -11,15 +11,18 @@ jobs:
       - run:
           name: Setup
           command: npm install
+          working_directory: ./
       - save_cache:
           key: npm-cache-{{ checksum "./package-lock.json" }}
           paths: ./node_modules
       - run:
           name: Test
           command: npm test
+          working_directory: ./
       - run:
           name: Build PDF
           command: npm run pdf
+          working_directory: ./
       - run:
           name: Upload PDF
           command: bash ./.upload_dropbox_pdf.sh SAMPLE-BOOK.pdf ${DROPBOX_TOKEN}
@@ -27,9 +30,11 @@ jobs:
 　    - store_artifacts:
           path: ./articles/SAMPLE-BOOK.pdf
           destination: SAMPLE-BOOK.pdf
+          working_directory: ./
       - run:
           name: Build EPUB
           command: npm run epub
+          working_directory: ./
       - run:
           name: Upload EPUB
           command: bash ./.upload_dropbox_epub.sh SAMPLE-BOOK.epub ${DROPBOX_TOKEN}
@@ -37,3 +42,4 @@ jobs:
 　    - store_artifacts:
           path: ./articles/SAMPLE-BOOK.epub
           destination: SAMPLE-BOOK.epub
+          working_directory: ./
