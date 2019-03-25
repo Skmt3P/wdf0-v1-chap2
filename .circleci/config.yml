@@ -27,7 +27,7 @@ jobs:
           name: Upload PDF
           command: bash ./.upload_dropbox_pdf.sh SAMPLE-BOOK.pdf ${DROPBOX_TOKEN}
           working_directory: ./articles
-　    - store_artifacts:
+      - store_artifacts:
           path: ./articles/SAMPLE-BOOK.pdf
           destination: SAMPLE-BOOK.pdf
           working_directory: ./
