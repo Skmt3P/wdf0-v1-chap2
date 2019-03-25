@@ -22,7 +22,7 @@ jobs:
           command: npm run pdf
       - run:
           name: Upload PDF
-          command: bash ./articles/.upload_dropbox_pdf.sh SAMPLE-BOOK.pdf ${DROPBOX_TOKEN}
+          command: bash ./articles/.upload_dropbox_pdf.sh ./articles/SAMPLE-BOOK.pdf ${DROPBOX_TOKEN}
       - store_artifacts:
           path: ./articles/SAMPLE-BOOK.pdf
           destination: SAMPLE-BOOK.pdf
@@ -31,7 +31,7 @@ jobs:
           command: npm run epub
       - run:
           name: Upload EPUB
-          command: bash ./articles/.upload_dropbox_epub.sh SAMPLE-BOOK.epub ${DROPBOX_TOKEN}
+          command: bash ./articles/.upload_dropbox_epub.sh ./articles/SAMPLE-BOOK.epub ${DROPBOX_TOKEN}
       - store_artifacts:
           path: ./articles/SAMPLE-BOOK.epub
           destination: SAMPLE-BOOK.epub
