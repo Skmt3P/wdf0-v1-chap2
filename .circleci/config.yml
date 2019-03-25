@@ -30,7 +30,6 @@ jobs:
       - store_artifacts:
           path: ./articles/SAMPLE-BOOK.pdf
           destination: SAMPLE-BOOK.pdf
-          working_directory: ./
       - run:
           name: Build EPUB
           command: npm run epub
