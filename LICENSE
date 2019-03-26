@@ -1,6 +1,13 @@
 MIT License
 
+// Origin Project
+https://github.com/TechBooster/ReVIEW-Template
+Copyright (c) 2019 mhidaka
+
+// This Sample Project
+https://github.com/Skmt3P/wdf0-v1-chap2
 Copyright (c) 2019 Sakamoto-san
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +26,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+
+OTHER License
+
+// Origin Source
+https://github.com/TechBooster/ReVIEW-Template/tree/master/articles/sty
+Check These source and licenses.
+・review-jsbook.cls, review-base.sty, review-style.sty, review-custom.sty: MIT License
+・jumoline.sty: The LaTeX Project Public License
+・plistings.sty: MIT License
+・gentombow.sty: BSD License
+・jsbook.cls: BSD License
