@@ -13,21 +13,21 @@
 ## リポジトリ概要
 
 
-|ディレクトリ名|README|コメント|ディレクトリ概要|
-|:--|:--|:--|:--|
-|.circleci|×|○|CircleCIのConfigはここで管理している|
-|articles|○|○|★原稿等はここ！メインはここ！★|
-|prh-rules|×|×|書式や記述ルールの設定ファイル|
-|.gitignore|×|×|git対象外とするファイル等を設定するためのファイル|
-|Gemfile|×|×|gemのpackageを管理するファイル|
-|Gruntfile.js|×|×|gemコマンドを管理するファイル|
-|LICENSE|×|○|ライセンスについて記載しているファイル|
-|README.md|×|×|このファイル|
-|build-in-docker.sh|×|×|※使用していません|
-|package-lock.json|×|×|package.jsonのlockファイル。ver.が固定される|
-|package.json|×|○|使用するpackageやコマンド、著作情報等を管理するファイル|
-|redpen-conf-ja.xml|×|×|redpenの設定ファイル|
-|setup.sh|×|×|※使用していません|
+|名称|D/F|README|コメント|概要|
+|:--|:--|:--|:--|:--|
+|.circleci|D|×|○|CircleCIのConfigはここで管理している|
+|articles|D|○|○|★原稿等はここ！メインはここ！★|
+|prh-rules|D|×|×|書式や記述ルールの設定ファイル|
+|.gitignore|F|×|×|git対象外とするファイル等を設定するためのファイル|
+|Gemfile|F|×|×|gemのpackageを管理するファイル|
+|Gruntfile.js|F|×|×|gemコマンドを管理するファイル|
+|LICENSE|F|×|○|ライセンスについて記載しているファイル|
+|README.md|F|×|×|このファイル|
+|build-in-docker.sh|F|×|×|※使用していません|
+|package-lock.json|F|×|×|package.jsonのlockファイル。ver.が固定される|
+|package.json|F|×|○|使用するpackageやコマンド、著作情報等を管理するファイル|
+|redpen-conf-ja.xml|F|×|×|redpenの設定ファイル|
+|setup.sh|F|×|×|※使用していません|
 
 ## Build手順
 [本書](https://skmt3p.booth.pm/items/1315195)参照
