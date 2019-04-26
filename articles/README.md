@@ -6,12 +6,12 @@
 
 |名称|D/F|README|コメント|概要|
 |:--|:--|:--|:--|:--|
-|images|D|×|○|CircleCIのConfigはここで管理している|
-|lib/tasks|D|×|○|CircleCIのConfigはここで管理している|
-|sty|D|×|○|CircleCIのConfigはここで管理している|
-|.upload_dropbox_epub.sh|D|×|○|CircleCIのConfigはここで管理している|
-|.upload_dropbox_pdf.sh|D|×|○|CircleCIのConfigはここで管理している|
-|README.md|D|×|○|CircleCIのConfigはここで管理している|
+|images|D|×|×|文中に挿入する画像や表紙・裏表紙・広告画像はここで管理する|
+|lib/tasks|D|×|×|Re:VIEWのrakeファイルを格納。改変しない|
+|sty|D|○|○|Re:VIEWのstyファイルを格納。適宜改修を行う|
+|.upload_dropbox_epub.sh|F|×|○|epubをdropboxにアップロードするためのshファイル|
+|.upload_dropbox_pdf.sh|F|×|○|pdfをdropboxにアップロードするためのshファイル|
+|README.md|F|×||TODO: |
 |Rakefile|D|×|○|CircleCIのConfigはここで管理している|
 |catalog.yml|D|×|○|CircleCIのConfigはここで管理している|
 |chap_1.re|D|×|○|CircleCIのConfigはここで管理している|
