@@ -58,7 +58,7 @@
 <br>
 
 ## 本書の正誤表
-[WIKI](https://github.com/Skmt3P/wdf0-v1-chap2/wiki/%E6%AD%A3%E8%AA%A4%E8%A1%A8)参照
+[第1章「おいでよ！技術書執筆」のサンプルリポジトリ](https://github.com/Skmt3P/wdf0-v1-chap1)の[WIKI](https://github.com/Skmt3P/wdf0-v1-chap1/wiki/%E6%AD%A3%E8%AA%A4%E8%A1%A8)参照
 
 <br>
 
